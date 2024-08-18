@@ -1,3 +1,4 @@
+setwd("/Users/takayukitamura/Documents/R_Computing/us_pop_gdp/gdp/gdp")
 library(tidyverse)
 library(ggtext)
 library(patchwork)
@@ -104,6 +105,7 @@ initial_annual_data <- annual_gdp %>%
   slice_min(year)
 
 initial_year <- initial_annual_data$year
+
 initial_annual_gdp <- initial_annual_data$gdp
 
 # initial_date <- initial_data$date
